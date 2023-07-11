@@ -14,8 +14,10 @@ const AnotherItemPreview: FC<{
     <div className="py-10 p-side">
       <h1 className="text-xl mb-6 font-medium">Desain Lainnya oleh Studio SAe</h1>
       <div className="grid md:grid-cols-4 grid-cols-1 gap-4">
-        {[1,2,3,4].map((item) => (
-          <AnotherItemCard />
+        {[1,2,3,4].map((item, index) => (
+          <div key={index}>
+            <AnotherItemCard />
+          </div>
         ))}
       </div>
     </div>

@@ -11,8 +11,8 @@ const Testimonal: FC<{
   return (
     <div className="rounded-lg my-10 border-[1px] p-[24px] w-[364px]">
         <h1 className="text-2xl font-medium mb-4">Testimoni</h1>
-        {[1,2,3].map(item => 
-        <div className="flex gap-1 mb-4">
+        {[1,2,3].map((item, index) => 
+        <div key={index} className="flex gap-1 mb-4">
             <Image src={account} alt="" className="scale-75 translate-y-[-10px]" width={100}/>
             <div>
                 <div className="flex gap-2">

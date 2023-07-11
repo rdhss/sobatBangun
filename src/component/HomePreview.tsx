@@ -39,8 +39,10 @@ const HomePreview: FC<{
     <div className="py-10">
       <h1 className="text-xl mb-6 font-medium md:text-left text-center">Tampilan Rumah</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-        {listData.map((item) => (
-          <CardPrevivew title={item.title} img={item.img} size={item.size} />
+        {listData.map((item, index) => (
+            <div key={index}>
+                <CardPrevivew title={item.title} img={item.img} size={item.size} />
+            </div>
         ))}
       </div>
     </div>
