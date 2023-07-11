@@ -2,7 +2,7 @@
   Sobat Bangun
 </h1>
 <div align="center">
-  <img alt="Logo" src="./src/assets/sobatbangun.png" />
+  <img alt="Logo" src="./src/app/assets/images/sobatbangun.png" />
 </div>
 
 
